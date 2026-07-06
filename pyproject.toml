@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "volt-vision-copilot"
+version = "0.1.0"
+description = "Human-in-the-loop CNC power-deviation investigation prototype for the Kaggle Agents for Business track."
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "google-adk",
+    "mcp",
+    "streamlit",
+    "pandas",
+    "numpy",
+    "plotly",
+    "pydantic",
+    "python-dotenv",
+    "litellm!=1.82.7,!=1.82.8",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/volt_vision"]

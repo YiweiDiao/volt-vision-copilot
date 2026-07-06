@@ -1,0 +1,47 @@
+.venv/
+.env
+__pycache__/
+.pytest_cache/
+references/originals/
+data/private/
+data/*.jsonl
+docs/checkpoints/
+
+# Private patent / dissertation source material
+references/private/*
+!references/private/.gitkeep
+
+# Internal and intermediate documentation
+docs/checkpoints/
+docs/demo_*.md
+docs/demo_*.srt
+docs/demo_*.txt
+docs/kaggle_*.md
+docs/kaggle_*.txt
+docs/public_*.md
+docs/*_handoff_*.md
+docs/*_checkpoint_*.md
+
+# Local generated demo video exports
+docs/demo_assets/video/
+
+# Local environment variants
+.env.*
+!.env.example
+
+# Streamlit local secrets
+.streamlit/secrets.toml
+
+# Local runtime databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Local uploads and exports
+uploads/
+exports/
+
+# Local archive exports
+*.zip
+*.7z
+*.tar.gz
