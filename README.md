@@ -51,7 +51,7 @@ acknowledgement gates local feedback, and feedback does not change detection.
 
 ## Demo Video
 
-Demo video: published separately for the capstone submission.
+Demo video: [Volt Vision Copilot public demo](https://youtu.be/CYSGcUXvVuw).
 It demonstrates normal screening, suspected-deviation save gating, bounded
 guidance, and acknowledgement-gated feedback.
 
